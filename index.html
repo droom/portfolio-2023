@@ -5,569 +5,538 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap" rel="stylesheet">
       <meta charset="UTF-8">
+      <title>PORTFOLIO 2023</title>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-
       <style>
          @font-face {
-         font-family: 'GT-Pressura';
-         /*src: url('GT-Pressura/GT-Pressura-Mono-Regular-Trial.woff2') format('woff2'),*/
-         /*src: url('GT-Pressura/GT-Pressura-Mono-Medium-Trial.woff2') format('woff2'),*/
-         /*src: url('GT-Pressura/GT-Pressura-Mono-Light-Trial.woff2') format('woff2'),*/
-         /*url('myfont.woff') format('woff'),*/
-         /*url('myfont.ttf') format('truetype');*/
+         font-family: 'Sohne';
+         src: url('fonts/sohne/test-soehne-buch.woff2') format('woff2');
          }
-
+         @font-face {
+         font-family: 'Sohne Mono';
+         src: url('fonts/sohne-mono/test-soehne-mono-buch.woff2') format('woff2');
+         }
+         html {
+         box-sizing: border-box;
+         }
+         *, *:before, *:after {
+         box-sizing: inherit;
+         }
          body{
-         background: grey;
-         color: white;
+         background: #E3E0D3;
+         color: #3A5630;
+         color: #000;
          margin: 0;
          padding: 0;
-         font-family: 'GT-Pressura', 'Roboto Mono', monospace;
+         font-family: 'Sohne', sans-serif;
          }
-		  table{
+         section.wrap{
+         width: 90vw; 
+         margin: auto;
+         }
+         table{
          margin: 0 auto;
          padding: 0;
-         width: 100vw; 
-		  
-        }
-        th,
-		  td{
-			  vertical-align: top;
-			  border-top: 1px solid rgba(255,255,255,0.3);
-			  padding: 6px 0 9px 0;
-			  font-size: 14px;
-           text-align: left;
-			  text-transform: uppercase;
-
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-		  }
-
-        th{
-         background-color: rgba(255,255,255,0.1)
-        }
-
-        td.icon{
+         border-width: 0;
+         border-spacing: 0; 
+         }
+         th,
+         td{
+         vertical-align: top;
+         border-top: 1px solid rgba(0,0,0,0.3);
+         padding: 6px 0 9px 0;
+         font-size: 14px;
+         text-align: left;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         }
+         th{
+         background-color: rgba(255,255,255,0.8);
+         position: sticky;
+         z-index: 999;
+         top: 0;
+         }
+         td.icon{
          padding: 0 15px 0 0;
          vertical-align: middle;
          text-align: right;
-        }
-        td.icon img{
-         /*height: 100%;*/
+         }
+         td.icon img{
          height: 16px;
-         /*padding-top: 1px; */
-         /*filter: saturate(50%);*/
-         opacity: 0.8;
+         opacity: 0.4;
          filter: brightness(2) saturate(0%) contrast(0.6);
-         /*filter: */
-
-        }
-        table td:nth-child(1),
-        table td:nth-child(2),
-        table td:nth-child(3),
-        table td:nth-child(4){
-           padding-right: 40px;
-        }
-        table th:nth-child(1),
-        table th:nth-child(2),
-        table th:nth-child(3),
-        table th:nth-child(4){
-           padding-right: 40px;
-        }
-   
-   tbody tr:hover {
-          background-color: rgba(255,100,0,0.1);
-        }
-
-   tbody tr:hover td.icon img{
+         }
+         table td:nth-child(1){
+         font-family: 'Sohne Mono', monospace;
+         }
+         table td:nth-child(1),
+         table td:nth-child(2),
+         table td:nth-child(3),
+         table td:nth-child(4){
+         padding-right: 30px;
+         }
+         table th:nth-child(1),
+         table th:nth-child(2),
+         table th:nth-child(3),
+         table th:nth-child(4){
+         padding-right: 30px;
+         }
+         tbody tr:hover {
+         background-color: rgba(255,255,255,0.4);
+         }
+         tbody tr:hover td.icon img{
          opacity: 0.9;
          filter: brightness(1) saturate(100%) contrast(1);
-        }
-
-@media (max-width: 600px){
-   thead{
-      display: none;
-   }
-
-   tr{
-      padding: 0 0 20px 0;
-      display: block;
-   }
-
-   td.icon{
-      display: none;
-   }
-   
-   td{
-            border-collapse: collapse;
-            /*background-color: black;*/
-            width: 100vw;
-            /*width: 100%;*/
-            display: inline-block;
-            display: block;
-
-            padding: 0;
-   }
-        table td:nth-child(1),
-        table td:nth-child(2),
-        table td:nth-child(3),
-        table td:nth-child(4){
-           padding-right: 0;
-        }
-        table th:nth-child(1),
-        table th:nth-child(2),
-        table th:nth-child(3),
-        table th:nth-child(4){
-           padding-right: 0;
-        }
-
-}
-
+         }
+         @media (max-width: 600px){
+         thead{
+         display: none;
+         }
+         tr{
+         padding: 0 0 20px 0;
+         display: block;
+         }
+         td.icon{
+         display: none;
+         }
+         td{
+         width: 100vw;
+         display: inline-block;
+         display: block;
+         padding: 0;
+         }
+         table td:nth-child(1),
+         table td:nth-child(2),
+         table td:nth-child(3),
+         table td:nth-child(4){
+         padding-right: 0;
+         }
+         table th:nth-child(1),
+         table th:nth-child(2),
+         table th:nth-child(3),
+         table th:nth-child(4){
+         padding-right: 0;
+         }
+         }
       </style>
    </head>
-
    <body>
-     <table border="0" cellspacing="0" cellspadding="0">
-         <thead>
-            <tr>
-               <th>Date</th>
-               <th>Company</th>
-               <th>Organisation</th>
-               <th>Project</th>
-               <th></th>
-               <th>Role</th>
-            </tr>
-         </thead>
-
-
-         <tbody>
-            <tr>
-               <td>2022</td>
-               <td>MARGINS</td>
-               <td>Big Change Trust</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/aftereffects.png" /></td>
-               <td>—</td>
-            </tr>
-            <tr>
-               <td>2021</td>
-               <td>Good Praxis</td>
-               <td>Big Change Trust</td>
-               <td>New Education Story</td>
-               <td class="icon"><img src="icons/figma.png" /></td>
-               <td>Front-end design</td>
-            </tr>
-            <tr>
-               <td>2021</td>
-               <td>Good Praxis</td>
-               <!-- <td>Institute for Public Policy Research</td> -->
-               <td>I.P.P.R.</td>
-
-               <td>Environmental Justice Commission Report</td>
-               <td class="icon"><img src="icons/figma.png" /></td>
-               <td>—</td>
-            </tr>
-            <tr>
-               <td>2021</td>
-               <td>Good Praxis</td>
-               <td>G.A.T.C.</td>
-               <!-- <td>Global Alliance of Territorial Communities</td> -->
-               <td>COP20</td>
-               <td class="icon"><img src="icons/figma.png" /></td>>
-               <td>Stand design</td>
-            </tr>
-
-            <tr>
-               <td>2021</td>
-               <td>Good Praxis</td>
-               <td>G.A.T.C.</td>
-               <!-- <td>Global Alliance of Territorial Communities</td> -->
-               <td>COP20</td>
-               <td class="icon">
-                  <img src="icons/figma.png" />
-                  <img src="icons/indesign.png" />
-               </td>>
-               <td>Social media tiles</td>
-            </tr>
-
-            <tr>
-               <td>2021</td>
-               <td>Good Praxis</td>
-               <td>Protection Approaches</td>
-               <td>—</td>
-               <td class="icon">
-                  <img src="icons/figma.png" />
-                  <img src="icons/indesign.png" />
-               </td>
-               <td>Brand creation</td>
-            </tr>
-            <tr>
-               <td>2021</td>
-               <td>Good Praxis</td>
-               <td>Do The Green Thing</td>
-               <td>The Colour of the Climate Crisis</td>
-               <td class="icon">
-                  <img src="icons/figma.png" />
-               </td>
-               <td>Front-end design</td>
-            </tr>
-
-            <tr>
-               <td>2020</td>
-               <td>Good Praxis</td>
-               <td>Netil Radio</td>
-               <td>Brand Development</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2020</td>
-               <td>Good Praxis</td>
-               <td>Islington Council</td>
-               <td>Digital Upskilling Programme</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2020</td>
-               <td>Good Praxis</td>
-               <td>YRS TRULY</td>
-               <td>ASAP</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2019</td>
-               <td>Shelter</td>
-               <td>Digital Product</td>
-               <td>Vertical Rush</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2018</td>
-               <td>Shelter</td>
-               <td>Digital Product</td>
-               <td>Urban Rush</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2017</td>
-               <td>Shelter</td>
-               <td>Digital Product</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2015</td>
-               <td>VLT Labs</td>
-               <td>Scarlett Of Soho</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Product Designer</td>
-            </tr>
-
-            <tr>
-               <td>2014</td>
-               <td>VLT Labs</td>
-               <td>Scarlett Of Soho</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Brand Development</td>
-            </tr>
-
-            <tr>
-               <td>2014</td>
-               <td>VLT Labs</td>
-               <td>GoGet</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Brand Development</td>
-            </tr>
-
-            <tr>
-               <td>2014</td>
-               <td>VLT Labs</td>
-               <td>GoGet</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Front-End Development</td>
-            </tr>
- 
-            <tr>
-               <td>2013</td>
-               <td>Great State</td>
-               <td>Bristol Airport&nbsp;</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash OLA (AS2)&nbsp;</td>
-            </tr>
- 
-            <tr>
-               <td>2012</td>
-               <td>Great State</td>
-               <td>Kia Motors&nbsp;</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash OLA (AS2)</td>
-            </tr>
- 
-            <tr>
-               <td>2011</td>
-               <td>Great State</td>
-               <td>Orange Brand</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
- 
-            <tr>
-               <td>2011</td>
-               <td>Great State</td>
-               <td>Clarks</td>
-               <td>Takeovers / OLA&nbsp;</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2011</td>
-               <td>Great State</td>
-               <td>The Environment Agency</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-
-            <tr>
-               <td>2011</td>
-               <td>Great State</td>
-               <td>The National Trust</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking</td>
-            </tr>
-            <tr>
-               <td>2011</td>
-               <td>Great State</td>
-               <td>Friends' Life Insurance</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Motion Graphics</td>
-            </tr>
-            <tr>
-               <td>2011</td>
-               <td>Great State</td>
-               <td>The Royal Navy</td>
-               <td>Brand/Website</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking</td>
-            </tr>
-            <tr>
-               <td>2010</td>
-               <td>Dare West</td>
-               <td>BarclayCard&nbsp;</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>OLA (AS2)&nbsp;</td>
-            </tr>
-            <tr>
-               <td>2010</td>
-               <td>Dare West</td>
-               <td>Premier Inn&nbsp;</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking / Mailer design&nbsp; &nbsp;</td>
-            </tr>
-            <tr>
-               <td>2010</td>
-               <td>Dare West</td>
-               <td>Sainsbury's&nbsp;</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking / Mailer design &nbsp;</td>
-            </tr>
-            <tr>
-               <td>2010</td>
-               <td>Dare West</td>
-               <td>Sky&nbsp;</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>—</td>
-            </tr>
-            <tr>
-               <td>2010</td>
-               <td>Dare West</td>
-               <td>Vodafone&nbsp;</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>OLA (AS2)</td>
-            </tr>
-
-            <tr>
-               <td>2010</td>
-               <td>MARGINS</td>
-               <td>LGN Productions</td>
-               <td>Korahn Gayle</td>
-               <td class="icon"><img src="icons/aftereffects.png" /></td>
-               <td>Motion / Titling</td>
-            </tr>
-
-            <tr>
-               <td>2010</td>
-               <td>True Digital</td>
-               <td>Furniture Village</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking</td>
-            </tr>
-
-            <tr>
-               <td>2010</td>
-               <td>Blu Inc.</td>
-               <td>Anna Greville</td>
-               <td>Brochure Website</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Front-end build</td>
-            </tr>
-
-            <tr>
-               <td>2009</td>
-               <td>MARGINS</td>
-               <td>4AD / Young Turks</td>
-               <td>M. Ward</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-            <tr>
-               <td>2009</td>
-               <td>MARGINS</td>
-               <td>4AD / Young Turks</td>
-               <td>M. Ward</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-            <tr>
-               <td>2009</td>
-               <td>MARGINS</td>
-               <td>4AD / Rough Trade</td>
-               <td>Jarvis Cocker</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-
-            <tr>
-               <td>2008</td>
-               <td>FEREF</td>
-               <td>The Kingdom</td>
-               <td>The Kingdom&nbsp;</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-
-            <tr>
-               <td>2008</td>
-               <td>FEREF</td>
-               <td>Vivid Associates</td>
-               <td>Death Proof&nbsp;</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking</td>
-            </tr>
-
-            <tr>
-               <td>2008</td>
-               <td>Ralph &amp; Co.</td>
-               <td>ESPN</td>
-               <td>Rugby Union</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-
-            <tr>
-               <td>2008</td>
-               <td>Virgin Media</td>
-               <td>Sony Pictures</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-            <tr>
-               <td>2008</td>
-               <td>Virgin Media</td>
-               <td>Walt Disney Pictures</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-            <tr>
-               <td>2008</td>
-               <td>Virgin Media</td>
-               <td>Young Turks</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-
-            <tr>
-               <td>2007</td>
-               <td>Dancing Bee Ltd.</td>
-               <td>The Biography Channel</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) Web Components</td>
-            </tr>
-            <tr>
-               <td>2007</td>
-               <td>Dancing Bee Ltd.</td>
-               <td>The Discovery Channel</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-            <tr>
-               <td>2007</td>
-               <td>Dancing Bee Ltd.</td>
-               <td>Braun</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking</td>
-            </tr>
-            <tr>
-               <td>2006</td>
-               <td>Gemin-i</td>
-               <td>ActionAid</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) Platform design</td>
-            </tr>
-            <tr>
-               <td>2006</td>
-               <td>Gemin-i</td>
-               <td>Plan ID</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Flash (AS2) OLA</td>
-            </tr>
-            <tr>
-               <td>2006</td>
-               <td>Gemin-i</td>
-               <td>Sucata Run</td>
-               <td>—</td>
-               <td class="icon"><img src="icons/photoshop.png" /></td>
-               <td>Artworking</td>
-            </tr>
-         </tbody>
-      </table>
+      <section class="wrap">
+         <p>Lorem</p>
+         <p>I spent a lot of time growing up in Children’s Wards with little to do. My main entertainment was drawing. I didn’t realise it at the time, but I was preoccupied with letterforms and markings, the most accessible ones to a child being brand identities that you just see around. I was fortunate to be able to study graphic design. This came from unwavering support from my siblings and mum. The encouragement and protective environment I was afforded is unusual for our class and immigrant background. I had also been the recipient of a lot of care and nurture which not everyone has, giving me the opportunity to pursue a career in visual arts, something that not many second-generation poor immigrants have. I was fortunate to move into the industry, something that many don’t get the opportunity to do through no fault of their own. Being in the commercial industry for so long means I have lots of experience creating things that are made to sell something. I have also learnt a lot from other designers who have been really patient and generous with their time. Over the years, I’ve thought lots about access to graphic design as a profession for people from working class or migrant backgrounds. I would love to play a role in nurturing talent. I’ve had many obstacles in life and I know what it’s like to overcome them, to be in an industry that is sometimes arrogant and exclusionary, and to come through via an unconventional route. If I can make a living from this, you can too. My way into the industry was designing Flash adverts. Principles from animation and principles from video game design. This was just tweens and later on I learned ActionScript</p>
+         <p><strong>1996:</strong> The library at my school had some multimedia PCs. On a few of them was Corel Draw 4. So I’d spend a lot of time just noodling, staying back after school and using it until they locked up.</p>
+         <p><strong>1997:</strong> I remember seeing this site in 1997 and it made such a big impression on me. From the very beginning, I came to ‘web design’ via a visual communication interest. Most people that were making websites back then were coming at it from a technological point of view.</p>
+         <table>
+            <thead>
+               <tr>
+                  <th>Date</th>
+                  <th>Company</th>
+                  <th>Organisation</th>
+                  <th>Project</th>
+                  <th></th>
+                  <th>Role</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>2022</td>
+                  <td>MARGINS</td>
+                  <td>Big Change Trust</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/aftereffects.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2021</td>
+                  <td>Good Praxis</td>
+                  <td>Big Change Trust</td>
+                  <td>New Education Story</td>
+                  <td class="icon"><img src="icons/figma.png" alt="Lorem"></td>
+                  <td>Front-end design</td>
+               </tr>
+               <tr>
+                  <td>2021</td>
+                  <td>Good Praxis</td>
+                  <!-- <td>Institute for Public Policy Research</td> -->
+                  <td>I.P.P.R.</td>
+                  <td>Environmental Justice Commission Report</td>
+                  <td class="icon"><img src="icons/figma.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2021</td>
+                  <td>Good Praxis</td>
+                  <td>G.A.T.C.</td>
+                  <!-- <td>Global Alliance of Territorial Communities</td> -->
+                  <td>COP20</td>
+                  <td class="icon"><img src="icons/figma.png" alt="Lorem"></td>
+                  <td>Stand design</td>
+               </tr>
+               <tr>
+                  <td>2021</td>
+                  <td>Good Praxis</td>
+                  <td>G.A.T.C.</td>
+                  <!-- <td>Global Alliance of Territorial Communities</td> -->
+                  <td>COP20</td>
+                  <td class="icon">
+                     <img src="icons/figma.png" alt="Lorem">
+                     <img src="icons/indesign.png" alt="Lorem">
+                  </td>
+                  <td>Social media tiles</td>
+               </tr>
+               <tr>
+                  <td>2021</td>
+                  <td>Good Praxis</td>
+                  <td>Protection Approaches</td>
+                  <td>—</td>
+                  <td class="icon">
+                     <img src="icons/figma.png" alt="Lorem">
+                     <img src="icons/indesign.png" alt="Lorem">
+                  </td>
+                  <td>Brand creation</td>
+               </tr>
+               <tr>
+                  <td>2021</td>
+                  <td>Good Praxis</td>
+                  <td>Do The Green Thing</td>
+                  <td>The Colour of the Climate Crisis</td>
+                  <td class="icon">
+                     <img src="icons/figma.png" alt="Lorem">
+                  </td>
+                  <td>Front-end design</td>
+               </tr>
+               <tr>
+                  <td>2020</td>
+                  <td>Good Praxis</td>
+                  <td>Netil Radio</td>
+                  <td>Brand Development</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2020</td>
+                  <td>Good Praxis</td>
+                  <td>Islington Council</td>
+                  <td>Digital Upskilling Programme</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2020</td>
+                  <td>Good Praxis</td>
+                  <td>YRS TRULY</td>
+                  <td>ASAP</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2019</td>
+                  <td>Shelter</td>
+                  <td>Digital Product</td>
+                  <td>Vertical Rush</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2018</td>
+                  <td>Shelter</td>
+                  <td>Digital Product</td>
+                  <td>Urban Rush</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2017</td>
+                  <td>Shelter</td>
+                  <td>Digital Product</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2015</td>
+                  <td>VLT Labs</td>
+                  <td>Scarlett Of Soho</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Product Designer</td>
+               </tr>
+               <tr>
+                  <td>2014</td>
+                  <td>VLT Labs</td>
+                  <td>Scarlett Of Soho</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Brand Development</td>
+               </tr>
+               <tr>
+                  <td>2014</td>
+                  <td>VLT Labs</td>
+                  <td>GoGet</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Brand Development</td>
+               </tr>
+               <tr>
+                  <td>2014</td>
+                  <td>VLT Labs</td>
+                  <td>GoGet</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Front-End Development</td>
+               </tr>
+               <tr>
+                  <td>2013</td>
+                  <td>Great State</td>
+                  <td>Bristol Airport&nbsp;</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash OLA (AS2)&nbsp;</td>
+               </tr>
+               <tr>
+                  <td>2012</td>
+                  <td>Great State</td>
+                  <td>Kia Motors&nbsp;</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash OLA (AS2)</td>
+               </tr>
+               <tr>
+                  <td>2011</td>
+                  <td>Great State</td>
+                  <td>Orange Brand</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2011</td>
+                  <td>Great State</td>
+                  <td>Clarks</td>
+                  <td>Takeovers / OLA&nbsp;</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2011</td>
+                  <td>Great State</td>
+                  <td>The Environment Agency</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2011</td>
+                  <td>Great State</td>
+                  <td>The National Trust</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking</td>
+               </tr>
+               <tr>
+                  <td>2011</td>
+                  <td>Great State</td>
+                  <td>Friends' Life Insurance</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Motion Graphics</td>
+               </tr>
+               <tr>
+                  <td>2011</td>
+                  <td>Great State</td>
+                  <td>The Royal Navy</td>
+                  <td>Brand/Website</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>Dare West</td>
+                  <td>BarclayCard&nbsp;</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>OLA (AS2)&nbsp;</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>Dare West</td>
+                  <td>Premier Inn&nbsp;</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking / Mailer design&nbsp; &nbsp;</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>Dare West</td>
+                  <td>Sainsbury's&nbsp;</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking / Mailer design &nbsp;</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>Dare West</td>
+                  <td>Sky&nbsp;</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>—</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>Dare West</td>
+                  <td>Vodafone&nbsp;</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>OLA (AS2)</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>MARGINS</td>
+                  <td>LGN Productions</td>
+                  <td>Korahn Gayle</td>
+                  <td class="icon"><img src="icons/aftereffects.png" alt="Lorem"></td>
+                  <td>Motion / Titling</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>True Digital</td>
+                  <td>Furniture Village</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking</td>
+               </tr>
+               <tr>
+                  <td>2010</td>
+                  <td>Blu Inc.</td>
+                  <td>Anna Greville</td>
+                  <td>Brochure Website</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Front-end build</td>
+               </tr>
+               <tr>
+                  <td>2009</td>
+                  <td>MARGINS</td>
+                  <td>4AD / Young Turks</td>
+                  <td>M. Ward</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2009</td>
+                  <td>MARGINS</td>
+                  <td>4AD / Young Turks</td>
+                  <td>M. Ward</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2009</td>
+                  <td>MARGINS</td>
+                  <td>4AD / Rough Trade</td>
+                  <td>Jarvis Cocker</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2008</td>
+                  <td>FEREF</td>
+                  <td>The Kingdom</td>
+                  <td>The Kingdom&nbsp;</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2008</td>
+                  <td>FEREF</td>
+                  <td>Vivid Associates</td>
+                  <td>Death Proof&nbsp;</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking</td>
+               </tr>
+               <tr>
+                  <td>2008</td>
+                  <td>Ralph &amp; Co.</td>
+                  <td>ESPN</td>
+                  <td>Rugby Union</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2008</td>
+                  <td>Virgin Media</td>
+                  <td>Sony Pictures</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2008</td>
+                  <td>Virgin Media</td>
+                  <td>Walt Disney Pictures</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2008</td>
+                  <td>Virgin Media</td>
+                  <td>Young Turks</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2007</td>
+                  <td>Dancing Bee Ltd.</td>
+                  <td>The Biography Channel</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) Web Components</td>
+               </tr>
+               <tr>
+                  <td>2007</td>
+                  <td>Dancing Bee Ltd.</td>
+                  <td>The Discovery Channel</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2007</td>
+                  <td>Dancing Bee Ltd.</td>
+                  <td>Braun</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking</td>
+               </tr>
+               <tr>
+                  <td>2006</td>
+                  <td>Gemin-i</td>
+                  <td>ActionAid</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) Platform design</td>
+               </tr>
+               <tr>
+                  <td>2006</td>
+                  <td>Gemin-i</td>
+                  <td>Plan ID</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Flash (AS2) OLA</td>
+               </tr>
+               <tr>
+                  <td>2006</td>
+                  <td>Gemin-i</td>
+                  <td>Sucata Run</td>
+                  <td>—</td>
+                  <td class="icon"><img src="icons/photoshop.png" alt="Lorem"></td>
+                  <td>Artworking</td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
    </body>
 </html>
