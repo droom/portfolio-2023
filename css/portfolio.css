@@ -104,7 +104,7 @@ video{
 }
 
 .mono{
-    font-family: 'Sohne Mono', monospace;
+    font-family: 'Sohne Mono Reg', monospace;
     text-transform: uppercase;
     font-weight: 400;
     }
@@ -165,7 +165,7 @@ th, td{
     }
 
 table td:nth-child(1){
-     font-family: 'Sohne Mono', monospace;
+     font-family: 'Sohne Mono Reg', monospace;
     }
 
 table td:nth-child(1), table td:nth-child(2), table td:nth-child(3), table td:nth-child(5), table td:nth-child(6) {
