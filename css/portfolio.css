@@ -1,0 +1,228 @@
+ @font-face {
+     font-family: 'Sohne';
+     src: url('../fonts/sohne/test-soehne-buch.woff2') format('woff2');
+}
+ @font-face {
+     font-family: 'Sohne Mono';
+     src: url('../fonts/sohne-mono/test-soehne-mono-leicht.woff2') format('woff2');
+}
+
+ @font-face {
+     font-family: 'Sohne Mono Reg';
+     src: url('../fonts/sohne-mono/test-soehne-mono-buch.woff2') format('woff2');
+}
+
+
+ html {
+     box-sizing: border-box;
+}
+ *, *:before, *:after {
+     box-sizing: inherit;
+}
+ body{
+     background: #E3E0D3;
+     color: #000;
+     margin: 0;
+     padding: 0;
+     font-family: 'Sohne', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: green;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+
+}
+ul li{
+    /*border-left: 1px solid black*/
+    /*content: "— ";*/
+    /*margin-left: -10px;*/
+    /*overflow: visible;*/
+}
+
+td{
+    overflow: visible;
+    /*background: yellow;*/
+}
+
+body{
+}
+
+
+ol{
+    margin: 0;
+    padding: 0;
+counter-reset: item;
+
+
+}
+ol li{
+    list-style: none;
+
+}
+
+.title{
+    margin-bottom: 12px;
+    display: block;
+    /*background-color: yellow;*/
+}
+
+ol li:before {
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero);
+  padding: 0 10px 0 0;
+    font-family: 'Sohne Mono Reg','Sohne Mono', monospace;
+
+}
+
+video{
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+  background: rgba(200,0,0,0.1);
+}
+
+.multiply{
+    mix-blend-mode: multiply;
+
+}
+.center img.max{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mono{
+    font-family: 'Sohne Mono', monospace;
+    text-transform: uppercase;
+    font-weight: 400;
+    }
+
+
+.nowrap{
+    white-space: nowrap;
+    }
+
+.wrap{
+     width: 90vw;
+     margin: auto;
+}
+
+img.max{
+    max-width: 100%;
+}
+
+table{
+     margin: 0 auto;
+     width: 100%;
+     padding: 0;
+     border-width: 0;
+     border-spacing: 0;
+}
+
+th, td{
+     vertical-align: top;
+     border-top: 1px solid rgba(0,0,0,0.3);
+     padding: 6px 0 9px 0;
+     font-size: 15px;
+     text-align: left;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+ th{
+     background-color: #E3E0D3;
+     border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+ th.sticky{
+     position: sticky;
+     z-index: 999;
+     top: 0;
+    }
+
+ td.icon{
+     padding: 9px 5px 0 0;
+     vertical-align: top;
+     text-align: right;
+     white-space: nowrap;
+    }
+ td.icon img{
+     height: 16px;
+     padding-right: 3px;
+     display: inline-block;
+     opacity: 0.4;
+     filter: brightness(2) saturate(0%) contrast(0.6);
+    }
+
+table td:nth-child(1){
+     font-family: 'Sohne Mono', monospace;
+    }
+
+table td:nth-child(1), table td:nth-child(2), table td:nth-child(3), table td:nth-child(5), table td:nth-child(6) {
+     white-space: nowrap;
+    }
+ table td:nth-child(1), table td:nth-child(2), table td:nth-child(3), table td:nth-child(4){
+     padding-right: 30px;
+     /*background-color: red;*/
+}
+
+ table td:nth-last-child(1){
+     padding-right: 0;
+     /*background-color: red;*/
+}
+
+ table th:nth-child(1), table th:nth-child(2), table th:nth-child(3), table th:nth-child(4){
+     padding-right: 30px;
+}
+/* tbody tr:hover {
+     background-color: rgba(255,255,255,0.4);
+}*/
+ tbody tr:hover td.icon img{
+     opacity: 0.9;
+     filter: brightness(1) saturate(100%) contrast(1);
+}
+ h1, p{
+     max-width: 500px;
+     font-size: 15px;
+}
+ h1{
+     margin: 20px 0 70px 0;
+}
+ @media (max-width: 600px){
+     thead{
+         display: none;
+    }
+     tr{
+         padding: 0 0 20px 0;
+         display: block;
+    }
+     td.icon{
+         display: none;
+    }
+     td{
+         width: 100vw;
+         display: inline-block;
+         display: block;
+         padding: 0;
+    }
+     table td:nth-child(1), table td:nth-child(2), table td:nth-child(3), table td:nth-child(4){
+         padding-right: 0;
+    }
+     table th:nth-child(1), table th:nth-child(2), table th:nth-child(3), table th:nth-child(4){
+         padding-right: 0;
+    }
+}
+ .strike{
+     text-decoration: line-through;
+}
+ 
