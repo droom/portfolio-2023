@@ -24,6 +24,13 @@ blockquote{
 	margin: 0;
 }
 
+.round{
+	border-radius: 3px;
+}
+.shadow{
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.4));
+}
+
 cite + blockquote{
 padding-top: 20px;
 }
