@@ -1,15 +1,38 @@
- @font-face {
+@font-face {
      font-family: 'Sohne';
      src: url('../fonts/sohne/test-soehne-buch.woff2') format('woff2');
 }
- @font-face {
+@font-face {
      font-family: 'Sohne Mono';
      src: url('../fonts/sohne-mono/test-soehne-mono-leicht.woff2') format('woff2');
 }
 
- @font-face {
+@font-face {
      font-family: 'Sohne Mono Reg';
      src: url('../fonts/sohne-mono/test-soehne-mono-buch.woff2') format('woff2');
+}
+
+@font-face {
+     font-family: 'Heldane Reg';
+     src: url('../fonts/heldane/test-heldane-text-regular.woff2') format('woff2');
+}
+
+cite,
+blockquote{
+     font-family: 'Heldane Reg', serif;
+	padding: 0;
+	margin: 0;
+}
+
+cite + blockquote{
+padding-top: 20px;
+}
+
+blockquote + cite {
+padding-top: 10px;
+}
+.company td{
+	padding-bottom: 50px;
 }
 
 
@@ -25,6 +48,15 @@
      margin: 0;
      padding: 0;
      font-family: 'Sohne', sans-serif;
+}
+
+p{
+	margin: 0;
+}
+
+
+p+p{
+	margin-top: 10px;
 }
 
 a{
@@ -115,13 +147,14 @@ video{
     }
 
 .wrap{
-     width: 90vw;
+     width: 98vw;
+     max-width: 970px;
      margin: auto;
-}
+    }
 
-img.max{
+.max{
     max-width: 100%;
-}
+    }
 
 table{
      margin: 0 auto;
@@ -129,7 +162,7 @@ table{
      padding: 0;
      border-width: 0;
      border-spacing: 0;
-}
+    }
 
 th, td{
      vertical-align: top;
@@ -139,15 +172,18 @@ th, td{
      text-align: left;
      overflow: hidden;
      text-overflow: ellipsis;
-}
- th{
-     background-color: #E3E0D3;
-     border-bottom: 1px solid rgba(0,0,0,0.3);
-}
- th.sticky{
-     position: sticky;
-     z-index: 999;
-     top: 0;
+    }
+
+
+th{
+    background-color: #E3E0D3;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    }
+
+th.sticky{
+    position: sticky;
+    z-index: 999;
+    top: 0;
     }
 
  td.icon{
@@ -166,35 +202,51 @@ th, td{
 
 table td:nth-child(1){
      font-family: 'Sohne Mono Reg', monospace;
+     padding-right: 20px; 
     }
+
+table td:nth-child(2){
+     padding-right: 20px; 
+
+}
 
 table td:nth-child(1), table td:nth-child(2), table td:nth-child(3), table td:nth-child(5), table td:nth-child(6) {
      white-space: nowrap;
     }
  table td:nth-child(1), table td:nth-child(2), table td:nth-child(3), table td:nth-child(4){
-     padding-right: 30px;
+     /*padding-right: 30px;*/
      /*background-color: red;*/
 }
 
  table td:nth-last-child(1){
      padding-right: 0;
      /*background-color: red;*/
-}
+    }
 
  table th:nth-child(1), table th:nth-child(2), table th:nth-child(3), table th:nth-child(4){
-     padding-right: 30px;
-}
+     /*padding-right: 30px;*/
+    }
+
 /* tbody tr:hover {
      background-color: rgba(255,255,255,0.4);
 }*/
+
  tbody tr:hover td.icon img{
      opacity: 0.9;
      filter: brightness(1) saturate(100%) contrast(1);
 }
  h1, p{
-     max-width: 500px;
-     font-size: 15px;
-}
+     /*max-width: 500px;*/
+     /*font-size: 15px;*/
+    }
+
+
+p{
+    font-family: 'Heldane Reg', serif;
+    font-size: 16px;
+    }
+
+
  h1{
      margin: 20px 0 70px 0;
 }
