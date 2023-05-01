@@ -28,6 +28,11 @@ cite + blockquote{
 padding-top: 20px;
 }
 
+ol + p{
+padding-top: 20px;
+}
+
+
 blockquote + cite {
 padding-top: 10px;
 }
@@ -35,6 +40,9 @@ padding-top: 10px;
 	padding-bottom: 50px;
 }
 
+.book{
+	width: 100px;
+}
 
  html {
      box-sizing: border-box;
