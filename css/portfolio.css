@@ -17,6 +17,11 @@
      src: url('../fonts/heldane/test-heldane-text-regular.woff2') format('woff2');
 }
 
+.center{
+/*	align-items: center;*/
+/*	text-align: center;*/
+	padding-left:  8px;
+}
 cite,
 blockquote{
      font-family: 'Heldane Reg', serif;
@@ -288,6 +293,12 @@ p{
      table th:nth-child(1), table th:nth-child(2), table th:nth-child(3), table th:nth-child(4){
          padding-right: 0;
     }
+}
+
+.intro td{
+	padding-bottom: 60px;
+	
+/*	background: yellow;*/
 }
  .strike{
      text-decoration: line-through;
