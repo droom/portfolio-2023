@@ -296,11 +296,23 @@ p{
 }
 
 .intro td{
+	padding-top: 20px;
 	padding-bottom: 60px;
+	
+	
 	
 /*	background: yellow;*/
 }
+
+.smallcaps{
+	font-variant: small-caps;
+}
+
  .strike{
      text-decoration: line-through;
+	 -moz-text-decoration-color: red;
+	 -moz-text-decoration-style: wavy;
+	 text-decoration-color: red;
+	 text-decoration-style: wavy;
 }
  
